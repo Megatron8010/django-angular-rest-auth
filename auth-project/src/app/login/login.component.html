@@ -1,0 +1,26 @@
+<div class="regis-center">
+<form [formGroup]="userForm" (ngSubmit)="doLogin()">
+<div>
+<mat-form-field appearance="outline">
+    <mat-label>UserName</mat-label>
+    <input matInput placeholder="Placeholder" type="text" formControlName="username">
+    <mat-icon matSuffix>account_box</mat-icon>
+</mat-form-field>
+</div>
+<div>
+<mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Placeholder" type="text" formControlName="password">
+    <mat-icon matSuffix>security</mat-icon>
+</mat-form-field>
+</div>
+<div>
+<button mat-raised-button color="primary" type="submit">Login</button>
+</div>
+</form>
+</div>
+<div>
+<p *ngIf="userDetail.title">
+{{userDetail.title}}
+</p>
+</div>

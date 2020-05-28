@@ -1,0 +1,35 @@
+<div class="regis-center">
+<form [formGroup]="userForm" (ngSubmit)="doRegistration()">
+<div>
+<mat-form-field appearance="outline">
+    <mat-label>UserName</mat-label>
+    <input matInput placeholder="Placeholder" type="text" formControlName="username">
+    <mat-icon matSuffix>account_box</mat-icon>
+</mat-form-field>
+</div>
+<div>
+<mat-form-field appearance="outline">
+    <mat-label>E-Mail</mat-label>
+    <input matInput placeholder="Placeholder" type="text" formControlName="email">
+    <mat-icon matSuffix>alternate_email</mat-icon>
+</mat-form-field>
+</div>
+<div>
+<mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Placeholder" type="text" formControlName="password1">
+    <mat-icon matSuffix>security</mat-icon>
+</mat-form-field>
+</div>
+<div>
+<mat-form-field appearance="outline">
+    <mat-label>Confirm Password</mat-label>
+    <input matInput placeholder="Placeholder" type="text" formControlName="password2">
+    <mat-icon matSuffix>security</mat-icon>
+</mat-form-field>
+</div>
+<div>
+<button mat-raised-button color="primary" type="submit">Register</button>
+</div>
+</form>
+</div>
